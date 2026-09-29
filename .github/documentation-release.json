@@ -1,0 +1,26 @@
+{
+  "repository": "alexandroit/stackline-grunt-benchmark",
+  "packages": [
+    {
+      "name": "@stackline/grunt-benchmark",
+      "path": "README.md",
+      "version": "1.0.1",
+      "baselineVersion": "1.0.0",
+      "keywords": [
+        "stackline",
+        "npm-package",
+        "grunt-benchmark",
+        "grunt-plugin",
+        "nodejs",
+        "gruntplugin",
+        "benchmark",
+        "maintenance-fork"
+      ],
+      "homepage": "https://alexandro.net/docs/vanilla/grunt-benchmark/",
+      "baselineTarball": "https://registry.npmjs.org/@stackline/grunt-benchmark/-/grunt-benchmark-1.0.0.tgz",
+      "baselineIntegrity": "sha512-YDlcKZ3G6fbNYQSRakNbuK+MkfTMlupYWDsMmtiiwv1zZIRo/4dbnMYyhMNLy0jpknxym/iVB71C7T8lMjp45A==",
+      "expectedSha512": "251b9bcaa610009e6795edfb15ddb3604b106461f84075bd4a8785bf5cc07d05adcf345d2fa519d042fa79aca6c2c66d66f840c555e5a690c5e6417446fd4889",
+      "tag": "docs-stackline-grunt-benchmark-v1.0.1"
+    }
+  ]
+}
