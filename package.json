@@ -1,8 +1,8 @@
 {
   "name": "@stackline/grunt-benchmark",
   "description": "Grunt task for benchmarking",
-  "version": "1.0.0",
-  "homepage": "https://github.com/alexandroit/stackline-grunt-benchmark#readme",
+  "version": "1.0.1",
+  "homepage": "https://alexandro.net/docs/vanilla/grunt-benchmark/",
   "author": {
     "name": "Kyle Robinson Young",
     "email": "kyle@dontkry.com",
@@ -40,9 +40,13 @@
     "cli-table": "^0.3.1"
   },
   "keywords": [
+    "stackline",
+    "npm-package",
+    "grunt-benchmark",
+    "grunt-plugin",
+    "nodejs",
     "gruntplugin",
     "benchmark",
-    "stackline",
     "maintenance-fork"
   ],
   "devDependencies": {

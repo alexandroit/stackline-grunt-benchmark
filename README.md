@@ -1,31 +1,60 @@
 # @stackline/grunt-benchmark
 
-Independent maintenance fork of `grunt-benchmark@1.0.0`. Original API, module format, runtime dependency ranges, and supported Node.js engines are preserved.
+> Grunt task for benchmarking.
 
-```sh
+[![npm version](https://img.shields.io/npm/v/@stackline/grunt-benchmark.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/grunt-benchmark)
+[![license](https://img.shields.io/npm/l/@stackline/grunt-benchmark.svg?style=flat-square)](https://github.com/alexandroit/stackline-grunt-benchmark)
+[![GitHub repository](https://img.shields.io/badge/GitHub-alexandroit%2Fstackline-grunt-benchmark-181717?style=flat-square&logo=github)](https://github.com/alexandroit/stackline-grunt-benchmark)
+[![Docs](https://img.shields.io/badge/docs-alexandro.net-0f766e?style=flat-square)](https://alexandro.net/docs/vanilla/grunt-benchmark/)
+[![Reddit community](https://img.shields.io/badge/community-r%2FStackline-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/r/Stackline/)
+
+**[Documentation](https://alexandro.net/docs/vanilla/grunt-benchmark/)** | **[npm](https://www.npmjs.com/package/@stackline/grunt-benchmark)** | **[Issues](https://github.com/alexandroit/stackline-grunt-benchmark/issues)** | **[Repository](https://github.com/alexandroit/stackline-grunt-benchmark)**
+
+**Current package version:** `1.0.1`
+
+---
+
+## Why this package?
+
+`@stackline/grunt-benchmark` is the Stackline-maintained distribution of `grunt-benchmark@1.0.0`. It is an independent continuation of [grunt-benchmark](https://github.com/shama/grunt-benchmark); original authors and licenses remain credited below.
+
+## Compatibility
+
+| Item | Value |
+| :--- | :--- |
+| Package | `@stackline/grunt-benchmark@1.0.1` |
+| API target | `grunt-benchmark@1.0.0` |
+| Supported Node.js | `>= 0.10.0` |
+| License | `MIT` |
+| Main entry | `lib/grunt-benchmark.js` |
+| Runtime dependencies | `benchmark, cli-table` |
+
+## Installation
+
+```bash
 npm install @stackline/grunt-benchmark
-# Preserve existing imports with an npm alias:
-npm install grunt-benchmark@npm:@stackline/grunt-benchmark@1.0.0
 ```
 
-See [UPSTREAM.md](UPSTREAM.md) for the exact source and issue review, and [CHANGELOG.md](CHANGELOG.md) for focused maintenance changes. Development and release tooling runs on Node.js 24; that does not change the library runtime requirement.
+Preserve existing imports and plugin resolution with an npm alias:
 
-Maintained by [Stackline](https://alexandro.net/). [Issues](https://github.com/alexandroit/stackline-grunt-benchmark/issues) · [npm](https://www.npmjs.com/package/@stackline/grunt-benchmark).
+```bash
+npm install grunt-benchmark@npm:@stackline/grunt-benchmark
+```
 
-## Upstream documentation
+## Usage and API reference
 
-# grunt-benchmark
+### grunt-benchmark
 
 Grunt task for benchmarking with [Benchmark.js].
 
 ## Getting Started
 Install this grunt plugin next to your project's
-[Gruntfile][getting_started] with: `npm install grunt-benchmark`
+[Gruntfile][getting_started] with: `npm install @stackline/grunt-benchmark`
 
 Then add this line to your project's Gruntfile:
 
 ```javascript
-grunt.loadNpmTasks('grunt-benchmark');
+grunt.loadNpmTasks('@stackline/grunt-benchmark');
 ```
 
 ## Documentation
@@ -213,7 +242,7 @@ benchmarks. This example will create a function to run the `watch` task:
 ```javascript
 // benchmarks/watch.js
 // Create a spawnable watch task. Doesn't actually spawn until called.
-var watchTask = require('grunt-benchmark').spawnTask('watch', {
+var watchTask = require('@stackline/grunt-benchmark').spawnTask('watch', {
 
   // Text trigger to look for to know when to run the next step or exit
   trigger: 'Waiting...',
@@ -349,3 +378,21 @@ Licensed under the MIT license.
 [getting_started]: https://gruntjs.com/getting-started
 [Benchmark.js]: http://benchmarkjs.com/
 [task options]: http://benchmarkjs.com/docs#options
+
+## Credits and original authors
+
+- Original project: [grunt-benchmark](https://github.com/shama/grunt-benchmark).
+- Kyle Robinson Young.
+- Stackline maintenance: [Alexandro Paixao Marques](https://www.linkedin.com/in/aleinfo/) and [Stackline contributors](https://github.com/alexandroit).
+
+Original copyright, license notices and contributor acknowledgements remain part of this distribution. Stackline maintenance does not replace authorship of the original work.
+
+## Community and Links
+
+- [Stackline website](https://alexandro.net/)
+- [GitHub projects](https://github.com/alexandroit)
+- [npm packages](https://www.npmjs.com/~alex360qc)
+- [Reddit community — r/Stackline](https://www.reddit.com/r/Stackline/)
+- [Maintainer LinkedIn](https://www.linkedin.com/in/aleinfo/)
+
+Use this repository's issue tracker for reproducible bugs and feature requests. Join r/Stackline for examples, usage questions and release discussions.
