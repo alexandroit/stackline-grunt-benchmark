@@ -4,7 +4,7 @@
     {
       "name": "@stackline/grunt-benchmark",
       "path": "README.md",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "baselineVersion": "1.0.0",
       "keywords": [
         "stackline",
@@ -19,8 +19,8 @@
       "homepage": "https://alexandro.net/docs/vanilla/grunt-benchmark/",
       "baselineTarball": "https://registry.npmjs.org/@stackline/grunt-benchmark/-/grunt-benchmark-1.0.0.tgz",
       "baselineIntegrity": "sha512-YDlcKZ3G6fbNYQSRakNbuK+MkfTMlupYWDsMmtiiwv1zZIRo/4dbnMYyhMNLy0jpknxym/iVB71C7T8lMjp45A==",
-      "expectedSha512": "251b9bcaa610009e6795edfb15ddb3604b106461f84075bd4a8785bf5cc07d05adcf345d2fa519d042fa79aca6c2c66d66f840c555e5a690c5e6417446fd4889",
-      "tag": "docs-stackline-grunt-benchmark-v1.0.1"
+      "expectedSha512": "06686d4e7f9e25f1ae5f92a4eb31cf380f3cef110dc7d96a1143305a66cc673b785905c216ab56974fb68679bf5b3415ef0a8cc7af8b30f101ed2c2203be5d12",
+      "tag": "docs-stackline-grunt-benchmark-v1.0.2"
     }
   ]
 }
