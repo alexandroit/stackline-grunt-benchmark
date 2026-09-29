@@ -1,7 +1,7 @@
 {
   "name": "@stackline/grunt-benchmark",
   "description": "Grunt task for benchmarking",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://alexandro.net/docs/vanilla/grunt-benchmark/",
   "author": {
     "name": "Kyle Robinson Young",
