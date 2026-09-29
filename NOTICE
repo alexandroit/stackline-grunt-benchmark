@@ -1,0 +1,4 @@
+This is an independent maintenance fork of grunt-benchmark 1.0.0.
+Upstream source commit: 87045a49224f6877c6916357201b80b897221301
+The upstream license and author notices are retained unchanged.
+Stackline changes are documented in CHANGELOG.md. No upstream endorsement is implied.

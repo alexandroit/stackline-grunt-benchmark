@@ -1,8 +1,8 @@
 {
-  "name": "grunt-benchmark",
+  "name": "@stackline/grunt-benchmark",
   "description": "Grunt task for benchmarking",
   "version": "1.0.0",
-  "homepage": "https://github.com/shama/grunt-benchmark",
+  "homepage": "https://github.com/alexandroit/stackline-grunt-benchmark#readme",
   "author": {
     "name": "Kyle Robinson Young",
     "email": "kyle@dontkry.com",
@@ -10,22 +10,30 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/shama/grunt-benchmark.git"
+    "url": "git+https://github.com/alexandroit/stackline-grunt-benchmark.git"
   },
   "bugs": {
-    "url": "https://github.com/shama/grunt-benchmark/issues"
+    "url": "https://github.com/alexandroit/stackline-grunt-benchmark/issues"
   },
   "license": "MIT",
   "main": "lib/grunt-benchmark.js",
   "files": [
     "tasks",
-    "lib"
+    "lib",
+    "LICENSE*",
+    "license*",
+    "NOTICE",
+    "UPSTREAM.md",
+    "CHANGELOG.md",
+    "README.md",
+    "readme.md"
   ],
   "engines": {
     "node": ">= 0.10.0"
   },
   "scripts": {
-    "test": "grunt -v"
+    "test": "grunt benchmark && node test/stackline.cjs",
+    "test:package": "node scripts/test-package.mjs"
   },
   "dependencies": {
     "benchmark": "~1.0.0",
@@ -33,13 +41,17 @@
   },
   "keywords": [
     "gruntplugin",
-    "benchmark"
+    "benchmark",
+    "stackline",
+    "maintenance-fork"
   ],
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-jshint": "^1.0.0",
-    "grunt-contrib-nodeunit": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "ncp": "^2.0.0"
+    "grunt": "1.6.3",
+    "grunt-cli": "1.5.0",
+    "ncp": "2.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }

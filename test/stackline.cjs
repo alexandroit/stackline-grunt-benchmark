@@ -1,0 +1,10 @@
+var assert=require('assert'),path=require('path'),fs=require('fs'),grunt=require('grunt');
+var root=process.env.STACKLINE_TEST_PACKAGE || path.resolve(__dirname,'..');
+var helper=require(path.join(root,'tasks/lib/benchmark'))(grunt);
+var dir=path.resolve('tmp/stackline-contract');fs.mkdirSync(dir,{recursive:true});
+var fixture=path.join(dir,'deferred.js'),output=path.join(dir,'results.csv');
+fs.writeFileSync(fixture,"module.exports={name:'packed-deferred',defer:true,maxTime:0.01,minSamples:1,initCount:1,fn:function(d){setTimeout(function(){d.resolve();},1);}};\n");
+if(fs.existsSync(output))fs.unlinkSync(output);
+var done=false;
+helper.runBench(path.relative(process.cwd(),fixture),output,{},function(){var result=fs.readFileSync(output,'utf8');assert(result.indexOf('packed-deferred')>=0);assert(result.indexOf('hz')>=0);assert(!/Error:/.test(result));done=true;console.log('Packed deferred benchmark and CSV reporting passed');});
+process.on('exit',function(){assert(done,'benchmark callback completed');});

@@ -1,3 +1,19 @@
+# @stackline/grunt-benchmark
+
+Independent maintenance fork of `grunt-benchmark@1.0.0`. Original API, module format, runtime dependency ranges, and supported Node.js engines are preserved.
+
+```sh
+npm install @stackline/grunt-benchmark
+# Preserve existing imports with an npm alias:
+npm install grunt-benchmark@npm:@stackline/grunt-benchmark@1.0.0
+```
+
+See [UPSTREAM.md](UPSTREAM.md) for the exact source and issue review, and [CHANGELOG.md](CHANGELOG.md) for focused maintenance changes. Development and release tooling runs on Node.js 24; that does not change the library runtime requirement.
+
+Maintained by [Stackline](https://alexandro.net/). [Issues](https://github.com/alexandroit/stackline-grunt-benchmark/issues) · [npm](https://www.npmjs.com/package/@stackline/grunt-benchmark).
+
+## Upstream documentation
+
 # grunt-benchmark
 
 Grunt task for benchmarking with [Benchmark.js].
